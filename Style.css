@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-top: 1rem;
+}
+
+section {
+    position: absolute;
+    top: 10%;
+}
+
+.container {
+    background-color: hsl(205, 72%, 37%);
+    background-color: rgb(179, 178, 198);
+    height: 50px;
+    width: 700px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.alert {
+    margin-bottom: 1rem;
+    height: 2rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+}
+
+.todoinput {
+    height: 30px;
+    width: 65vw;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.todoinput:focus {
+    border: 3px solid rgb(186, 137, 171);
+}
+
+
+.add {
+    height: 1.89rem;
+    width: 10vw;
+    margin-left: 2px;
+    color: #fff;
+    background-color: hsl(205, 94%, 49%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add:focus {
+    border: 3px solid #719ECE;
+}
+
+.add:hover {
+    background-color: hsl(204, 46%, 27%);
+    border: 3px solid #719ECE
+}
+
+.list {
+    display: none;
+    margin-top: 10%;
+    background-color: rgb(179, 178, 198);
+    height: max-content;
+    width: 700px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list-task {
+    margin-top: 2%;
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    border-radius: 20px;
+}
+
+.task {
+    height: 1.6rem;
+    width: 70%;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 15px;
+}
+
+.task:focus {
+    border: 3px solid rgb(186, 137, 171);
+}
+
+.completedLine {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.btn {
+    width: 88px;
+    height: 1.8rem;
+    position: relative;
+    left: 2%;
+    top: 7%;
+    margin-left: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.complete {
+    margin-left: 0px;
+    background-color: rgb(7, 154, 7);
+}
+
+.complete:hover {
+
+    background-color: rgb(5, 92, 5);
+    border: 3px solid rgb(109, 170, 109);
+}
+
+.delete {
+    background-color: rgb(255, 0, 0);
+}
+
+.delete:hover {
+    background-color: rgb(220, 38, 38);
+    border: 3px solid rgb(221, 139, 139);
+}
+
+.complete:focus {
+    border: 3px solid rgb(109, 170, 109);
+}
+
+.clearAll {
+    margin-top: 5%;
+}
+
+.clearAllTasks {
+    color: rgb(196, 97, 97);
+    font-size: 20px;
+    background: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.clearAllTasks:hover {
+    color: red;
+    transition: all 0.3s linear;
+}
+
+@media screen and (max-width:699px) {
+    section {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .todoinput {
+        width: 80%;
+    }
+
+    .add {
+        width: 10vw;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 90vw;
+        margin: auto;
+        padding: 8px 0px;
+    }
+
+    .list {
+        width: 86vw;
+        margin: auto;
+        margin-top: 8%;
+    }
+
+    .list-task {
+        flex-direction: column;
+        height: 20vw;
+    }
+
+    .task {
+        width: 80vw;
+        height: 26px;
+    }
+
+    .btn {
+        top: 0;
+        bottom: 0;
+        width: 19vw;
+        height: 2rem;
+        font-size: 3vw;
+    }
+
+    .complete {
+        left: 0;
+        top: 3vw;
+
+    }
+
+    .delete {
+        left: 0vw;
+        top: 3vw;
+    }
+}
